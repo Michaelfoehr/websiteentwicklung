@@ -1,0 +1,239 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.07.2015, 05:40:36
+    Author     : Michael Föhr
+*/
+
+/* Definition der Hauptseite */
+.body
+{
+    /* verwendung eines neuen Befehls */
+    /* mit Flex kann man die Boxen automatisch Anordnen */
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+
+/***                           ***/
+/*** Hintergrund Informationen ***/
+/***  Wird in body eingeflegt  ***/
+/***                           ***/
+
+.background
+{
+    float: none;
+    
+    /* hintergrund festlegen */
+    background-color: #000000; /* Basis Hintergrundfarbe */
+    background-image: url(../images/testbild.jpg);
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    opacity: 90%; /* Transparenz */
+    
+}
+
+/***                           ***/
+/*** Vordergrund Informationen ***/
+/***                           ***/
+.voreground
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: center;
+    
+    /* verwendete farben */
+    background-color: #fff;
+    
+    /* maximale Breite des Verwendbaren Bereiches */
+    width: 980px;
+    min-height: 100px;
+    max-height: 80%;
+    
+}
+
+/* Menü definitionen */
+.menue1div
+{
+    float: none;
+}
+
+.footermenue
+{
+    
+}
+
+.menue1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+
+.menue2, menue3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menue4
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+
+li
+{
+    float: none;
+    display: list-item;
+    /*list-style-image: ;*/
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+
+
+/* header Einstellungen*/
+.header 
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* Zentrumsbereich einstellungen*/
+.middle 
+{
+    /* verwendung eines neuen Befehls */
+    /* mit Flex kann man die Boxen automatisch Anordnen */
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    
+}
+
+/* Links */
+.left 
+{
+    background-color: #BBB;
+    width: 100px;
+}
+
+/* Contentbereich */
+.contentfield 
+{
+    background-color: #C4E1A4;
+    min-width: 80%;
+    max-width: 100%;
+}
+
+/* Rechts */
+.right 
+{
+   background-color: #555555;
+   width: 100px;
+}
+
+/* Fußbereich */
+.footer 
+{
+    display: flex;
+    justify-content: center;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    align-content:flex-start;
+    
+    background-color: #E1A4A4;
+}
+
+/***              ***/
+/*** Textbereiche ***/
+/***              ***/
+.basistext 
+{
+    /* Schriftart(en) mit, trennen */
+    font-family: sans-serif,ti;
+    
+    /* Aussehen der Schrift bestimmen */
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+
+    /* Schriftgröße und Farbe */
+    font-size: 22px;
+    color: #000000;
+    
+    /* Schrift Beginn und Position */
+    alignment-adjust: left;
+    alignment-baseline: baseline;
+    
+    /* Schrifthöhe */
+    line-height: 24px;
+}
+
+/* Überschriften */
+h1,h2,h3,h4
+{
+    font-weight:600;
+    line-height:1.4em;
+}
+
+h1
+{
+    font-size: 2.0em;
+    font-variant: normal;
+    font-style: normal;
+}
+
+h2
+{
+    font-size: 1.8em;
+    font-variant: normal;
+    font-style: normal;
+}
+
+h3
+{
+    font-size: 1.6em;
+    font-variant: normal;
+    font-style: normal;
+}
+
+h4
+{
+    font-size: 1.4em;
+    font-variant: normal;
+    font-style: normal;
+}
+
+h5
+{
+    font-size: 1.1em;
+    font-variant: normal;
+    font-style: italic;
+    font-weight: bold;
+    line-height:1.0em;
+}
+
+h6
+{
+    font-size: 1.1em;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: bold;
+    line-height:1.0em;
+}
